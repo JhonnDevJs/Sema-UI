@@ -2,6 +2,7 @@
   "name": "@jegdev/sema-ui",
   "private": false,
   "version": "0.0.1",
+  "description": "Una colección de componentes Lit minimalistas estilo Swiss Design",
   "type": "module",
   "files": [
     "dist"
@@ -14,10 +15,14 @@
       "require": "./dist/sema-ui.umd.js"
     }
   },
+  
+  "publishConfig": {
+    "access": "public"
+  },
+  
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build"
   },
   "dependencies": {
     "lit": "^3.0.0"
