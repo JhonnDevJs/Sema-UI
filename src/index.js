@@ -1,1 +1,2 @@
-export const version = '0.0.1';
+export const version = "0.0.1";
+import { SemaButton } from "./components/SemaButton/sema-button.js";
