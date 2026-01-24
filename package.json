@@ -3,28 +3,33 @@
   "private": false,
   "version": "0.0.6",
   "description": "Una colección de componentes Lit minimalistas estilo Swiss Design",
-  "keywords": ["Next", "React", "Angular", "Vue", "Astro", "Lit"],
+  "keywords": [
+    "Next",
+    "React",
+    "Angular",
+    "Vue",
+    "Astro",
+    "Lit"
+  ],
   "type": "module",
-  
   "files": [
     "dist",
     "src/index.d.ts"
   ],
-  
   "license": "MIT",
   "author": "JEG Dev Studios",
-  "contributors": ["JhonnDevJS", "JasubiPL"],
-  
+  "contributors": [
+    "JhonnDevJS",
+    "JasubiPL"
+  ],
   "main": "./dist/sema-ui.umd.js",
   "module": "./dist/sema-ui.es.js",
   "types": "./src/index.d.ts",
-  
   "homepage": "https://github.com/JEGDevStudios/Sema-UI",
   "repository": {
     "type": "git",
     "url": "https://github.com/JEGDevStudios/Sema-UI"
   },
-  
   "exports": {
     ".": {
       "types": "./src/index.d.ts",
@@ -32,11 +37,9 @@
       "require": "./dist/sema-ui.umd.js"
     }
   },
-  
   "publishConfig": {
     "access": "public"
   },
-  
   "scripts": {
     "dev": "vite",
     "build": "vite build"
@@ -45,6 +48,6 @@
     "lit": "^3.0.0"
   },
   "devDependencies": {
-    "vite": "^5.0.0" 
+    "vite": "^7.3.1"
   }
 }
