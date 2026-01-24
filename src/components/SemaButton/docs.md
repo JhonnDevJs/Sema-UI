@@ -16,7 +16,7 @@ import "@jegdev/sema-ui";
 export default function App() {
 	return (
 		<div>
-			<sema-button textLabel="Click en React"></sema-button>
+			<sema-button>Click en React</sema-button>
 		</div>
 	);
 }
@@ -65,7 +65,7 @@ import "@jegdev/sema-ui";
 ```
 
 ```html
-<sema-button textLabel="Hola Astro"></sema-button>
+<sema-button>Hola Astro</sema-button>
 ```
 
 ### Svelte
@@ -81,7 +81,7 @@ import "@jegdev/sema-ui";
 Por defecto, el componente renderiza un botón con los estilos primarios de la marca (rojo).
 
 ```html
-<sema-button textLabel="Click Aquí"></sema-button>
+<sema-button>Click Aquí</sema-button>
 ```
 
 ### 2. Enlace de Navegación
@@ -93,8 +93,8 @@ Para que el botón funcione como un hipervínculo (`<a>`), define la propiedad `
 	kind="link"
 	url="https://google.com"
 	target="_blank"
-	textLabel="Ir a Google"
 >
+Ir a Google
 </sema-button>
 ```
 
@@ -109,10 +109,10 @@ Controla el ancho del botón mediante la propiedad `size`.
 
 ```html
 <!-- Botón pequeño -->
-<sema-button size="sm" textLabel="Small"></sema-button>
+<sema-button size="sm">Small</sema-button>
 
 <!-- Botón ancho completo -->
-<sema-button size="full" textLabel="Full Width"></sema-button>
+<sema-button size="full">Full Width</sema-button>
 ```
 
 ### 4. Tamaño de Fuente (Font Size)
@@ -125,7 +125,7 @@ Puedes ajustar el tamaño del texto independientemente del tamaño del botón us
 - **`xl`**: 2rem
 
 ```html
-<sema-button fontSize="xl" textLabel="Texto Grande"></sema-button>
+<sema-button fontSize="xl">Texto Grande</sema-button>
 ```
 
 ### 5. Colores Personalizados
@@ -139,8 +139,8 @@ Para aplicar tus propios colores, añade el atributo `custom` (booleano) y defin
 	custom
 	firstColor="#000000"
 	secondaryColor="#FACC15"
-	textLabel="Negro y Amarillo"
 >
+Negro y Amarillo
 </sema-button>
 ```
 
@@ -150,8 +150,7 @@ Para aplicar tus propios colores, añade el atributo `custom` (booleano) y defin
 
 | Propiedad        | Tipo      | Default     | Descripción                                                             |
 | :--------------- | :-------- | :---------- | :---------------------------------------------------------------------- |
-| `mode`           | `String`  | `primary`   | Puedes alternar entre `outline` y `ghost`               |
-| `textLabel`      | `String`  | `undefined` | **Requerido.** El texto que se mostrará dentro del botón.               |
+| `mode`           | `String`  | `primary`   | Puedes alternar entre `outline` y `ghost`               								 |
 | `kind`           | `String`  | `""`        | Si es `"link"`, renderiza un `<a>`. De lo contrario, un `<button>`.     |
 | `url`            | `String`  | `undefined` | URL de destino. Solo funciona si `kind="link"`.                         |
 | `target`         | `String`  | `_self`     | Define dónde abrir el enlace (ej. `_blank`). Solo si `kind="link"`.     |
@@ -166,4 +165,4 @@ Para aplicar tus propios colores, añade el atributo `custom` (booleano) y defin
 
 - El componente utiliza etiquetas semánticas nativas (`<button>` o `<a>`) según el caso.
 - Soporta navegación por teclado (`Tab`) y foco visible (`outline`).
-- El atributo `title` se establece automáticamente igual que `textLabel` para mejorar el contexto.
+- El atributo `title` se establece automáticamente igual que `alt` para mejorar el contexto.

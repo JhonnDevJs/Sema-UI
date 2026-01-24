@@ -16,7 +16,6 @@ export class SemaButton extends LitElement {
 		secondaryColor: { type: String },
 		size: { type: String },
 		fontSize: { type: String },
-		textLabel: { type: String },
 		url: { type: String },
 		target: { type: String },
 		altText: { type: String },
@@ -31,7 +30,6 @@ export class SemaButton extends LitElement {
 		this.secondaryColor = "";
 		this.size = "";
 		this.fontSize = "";
-		this.textLabel;
 		this.url;
 		this.altText;
 		this.target;
@@ -71,16 +69,17 @@ export class SemaButton extends LitElement {
 							title="${this.altText}"
 							target="${this.target}"
 							class="btn ${isCustom ? "btn-outline-custom" : "btn-outline"}"
-							>${this.textLabel}
+							>
+							<slot></slot>
 						</a>
 					`
 				: html`
 						<button
 							style="${isCustomColor}${isCustomSize}${isCustomFontSize}"
 							class="btn ${isCustom ? "btn-outline-custom" : "btn-outline"}"
-							title="${this.textLabel}"
+							title="${this.altText}"
 						>
-							${this.textLabel}
+							<slot></slot>
 						</button>
 					`
 			: this.mode === "ghost" /* ---------------- IF GHOST ------------------ */
@@ -95,7 +94,8 @@ export class SemaButton extends LitElement {
 								class="btn ${this.custom === "on"
 									? "btn-ghost-custom"
 									: "btn-ghost"}"
-								>${this.textLabel}
+								>
+								<slot></slot>
 							</a>
 						`
 					: html`
@@ -104,9 +104,9 @@ export class SemaButton extends LitElement {
 								class="btn ${this.custom === "on"
 									? "btn-ghost-custom"
 									: "btn-ghost"}"
-								title="${this.textLabel}"
+								title="${this.altText}"
 							>
-								${this.textLabel}
+								<slot></slot>
 							</button>
 						`
 				: this.kind ===
@@ -121,7 +121,8 @@ export class SemaButton extends LitElement {
 								class="btn ${this.custom === "on"
 									? "btn-custom"
 									: "btn-primary"}"
-								>${this.textLabel}
+								>
+								<slot></slot>
 							</a>
 						`
 					: html`
@@ -130,9 +131,9 @@ export class SemaButton extends LitElement {
 								class="btn ${this.custom === "on"
 									? "btn-custom"
 									: "btn-primary"}"
-								title="${this.textLabel}"
+								title="${this.altText}"
 							>
-								${this.textLabel}
+								<slot></slot>
 							</button>
 						`;
 	}
