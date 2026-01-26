@@ -9,7 +9,13 @@
     "Angular",
     "Vue",
     "Astro",
-    "Lit"
+    "Lit",
+    "web",
+    "components",
+    "ui",
+    "seo",
+    "JEGDevStudios",
+    "jegdev"
   ],
   "type": "module",
   "files": [
@@ -19,8 +25,7 @@
   "license": "MIT",
   "author": "JEG Dev Studios",
   "contributors": [
-    "JhonnDevJS",
-    "JasubiPL"
+    "JhonnDevJS"
   ],
   "main": "./dist/sema-ui.umd.js",
   "module": "./dist/sema-ui.es.js",
