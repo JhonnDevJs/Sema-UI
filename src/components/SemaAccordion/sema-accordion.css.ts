@@ -35,7 +35,7 @@ export const SemaAccordionStyles = css`
   svg {
     width: 16px;
     height: 16px;
-    fill: var(--color-svg);
+    fill: var(--svgcolor);
     transform: var(--isOpenRotate);
     transition: transform 0.3s;
   }
