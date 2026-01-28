@@ -9,10 +9,6 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     
-    permissions:
-      contents: read
-      id-token: write 
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -21,6 +17,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+          # ESTO es la clave: le decimos que prepare el login para npm
+          registry-url: 'https://registry.npmjs.org'
 
       - name: Install dependencies
         run: npm ci
@@ -29,4 +27,7 @@ jobs:
         run: npm run build
 
       - name: Publish to npm
-        run: npm publish --provenance --access public
+        # Usamos el token que acabamos de guardar
+        run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
