@@ -24,14 +24,12 @@ export class SemaAccordion extends LitElement {
     --isOpenPadding: 1rem;
     --isOpenHeight: 200px;
     --isOpenOpacity: 1;
-    --isOpenBorderTop: 1px solid #e5e7eb;
     --isOpenRotate: rotate(180deg);`
     :`
     --color-btn: transparent;
     --isOpenPadding: 0; 
     --isOpenHeight: 0; 
-    --isOpenOpacity: 0; 
-    --isOpenBorderTop: none;
+    --isOpenOpacity: 0;
     --isOpenRotate: rotate(0);`;
 
     const stylesSvg = `

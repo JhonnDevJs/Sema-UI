@@ -1,6 +1,6 @@
 import { LitElement, html } from "lit"
 import { customElement, property } from "lit/decorators.js"
-import { BreadcrumbsStyles } from "./breadcrumbs.css"
+import { BreadcrumbsStyles } from "./sema-breadcrumbs.css"
 
 @customElement('sema-breadcrumbs')
 export class SemaBreadcrumbs extends LitElement {

@@ -7,7 +7,6 @@ export const SemaAccordionStyles = css`
   }
 
   .accordion {
-    border: 1px solid #e5e7eb;
     border-radius: 4px;
     margin-bottom: 0.5rem;
     background: var(--isOpenBackground);
@@ -35,8 +34,8 @@ export const SemaAccordionStyles = css`
   }
   
   svg {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     fill: var(--svgcolor);
     transform: var(--isOpenRotate);
     transition: transform 0.3s;
@@ -48,7 +47,6 @@ export const SemaAccordionStyles = css`
     overflow: hidden;
     transition: all 0.3s ease;
     opacity: var(--isOpenOpacity);
-    border-top: var(--isOpenBorderTop);
   }
 
   .__text {
@@ -57,12 +55,17 @@ export const SemaAccordionStyles = css`
   }
 
 	@media (prefers-color-scheme: dark) {
+      
+    .__btn {
+      background: var(--svgcolor);
+    }
+
 		.__title {
       color: #fff;
     }
       
     svg {
-      fill: var(--svgcolor);
+      fill: #fff;
     }
 
     .__text {
