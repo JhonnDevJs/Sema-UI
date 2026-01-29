@@ -140,8 +140,8 @@ La propiedad `color=""` puede recibir distintos formatos para colocar los colore
 
 ## API Reference
 
-| Propiedad  | Tipo     | Default   | Descripción                                       |
-| :--------- | :------- | :-------- | :------------------------------------------------ |
+| Propiedad  | Tipo     | Default   | Descripción                                         |
+| :--------- | :------- | :-------- | :------------------------------------------------   |
 | `color`    | `String` | `#dc2626` | Puedes usar `blue`, `#0077ff` y `rgb(0, 85, 255)` |
-| `question` | `String` | `""`      | Puedes pasarle aqui el titulo de la pregunta.     |
-| `answer`   | `String` | `""`      | Pueder pasarle aqui la respuesta de la pregunta.  |
+| `question` | `String` | `""`      | Puedes pasarle aqui el titulo de la pregunta.       |
+| `answer`   | `String` | `""`      | Pueder pasarle aqui la respuesta de la pregunta.    |

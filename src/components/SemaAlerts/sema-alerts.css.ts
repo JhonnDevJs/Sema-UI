@@ -2,7 +2,7 @@ import { css } from "lit";
 
 export const SemaAlertsStyles = css`
 	:host {
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: "Inter", system-ui, -apple-system, sans-serif;
 	}
 
 	.__section {

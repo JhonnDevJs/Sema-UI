@@ -10,7 +10,7 @@ export const stylesSemaFaqs = css`
   @media (prefers-color-scheme: dark) {
     :root {
       display: block;
-      font-family: Arial, Helvetica, sans-serif;
+      font-family: "Inter", system-ui, -apple-system, sans-serif;
     }
 
     section {

@@ -3,7 +3,7 @@ import { css } from "lit"
 export const SemaDropdownStyles = css`
   :host {
     display: block;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
   }
   .__btn {
     display: flex;

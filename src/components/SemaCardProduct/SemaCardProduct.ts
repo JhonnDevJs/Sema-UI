@@ -1,9 +1,9 @@
 import { LitElement, html } from "lit";
 import { customElement, property } from "lit/decorators.js";
-import { cardStyles } from "./card-product.css";
+import { cardStyles } from "./sema-card-product.css";
 
-@customElement("card-product")
-export class CardProduct extends LitElement {
+@customElement("sema-card-product")
+export class SemaCardProduct extends LitElement {
 
 	static styles = [cardStyles];
 
@@ -50,5 +50,25 @@ export class CardProduct extends LitElement {
 				</div>
 			</article>
 		`;
+	}
+}
+
+declare global {
+	interface HTMLElementTagNameMap{
+		"sema-card-product": SemaCardProduct;
+	}
+
+	namespace JSX {
+		interface IntrinsicElements {
+			"sema-card-product": {
+  			image: string;
+  			category: string;
+  			id: string;
+  			title: string;
+  			rate: number;
+  			count: number;
+  			price: number;
+			}
+		}
 	}
 }

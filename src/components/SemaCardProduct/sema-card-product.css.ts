@@ -129,4 +129,36 @@ export const cardStyles = css`
 		font-size: 0.9rem;
 		vertical-align: top;
 	}
+	
+	@media (prefers-color-scheme: dark) {
+		.product-card {
+			background-color: #1f2937;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+		}
+
+		.product-title {
+			color: #f9fafb;
+		}
+
+		.average-rating {
+			color: #f3f4f6;
+		}
+
+		.review-count {
+			color: #9ca3af;
+		}
+
+		.price {
+			color: #f9fafb;
+		}
+
+		.category {
+			background-color: #3730a3;
+			color: #e0e7ff;
+		}
+
+		hr {
+			border-top: 1px solid #374151;
+		}
+	}
 `;
