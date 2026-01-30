@@ -31,7 +31,7 @@ Sema UI es un sistema de diseño minimalista construido con [Lit](https://lit.de
 ### Instalación
 
 ```bash
-npm install @jegdev/sema-ui
+npm install @jegdev/semaui
 ```
 
 ---
@@ -59,5 +59,5 @@ Sema UI is a minimalist design system built with [Lit](https://lit.dev/). It pro
 ### Installation
 
 ```bash
-npm install @jegdev/sema-ui
+npm install @jegdev/semaui
 ```
