@@ -9,6 +9,7 @@ export const SemaButtonStyles = css`
 
 	.btn {
 		display: inline-flex;
+		box-sizing: border-box;
 		align-items: center;
 		justify-content: center;
 		border-radius: 8px;
@@ -24,6 +25,7 @@ export const SemaButtonStyles = css`
 			system-ui,
 			-apple-system,
 			sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 	}
 
 	.btn:hover {
@@ -54,7 +56,6 @@ export const SemaButtonStyles = css`
 	/* ---------------- OUTLINE BUTTON STYLES  ------------------- */
 
 	.btn-outline {
-		background: #f9fafb;
 		color: #da2b48;
 		border: 1.5px solid #da2b48;
 	}
@@ -66,7 +67,6 @@ export const SemaButtonStyles = css`
 	}
 
 	.btn-outline-custom {
-		background: var(--btn-secondary-color);
 		color: var(--btn-primary-color);
 		border: 1.5px solid var(--btn-primary-color, currentColor);
 	}
