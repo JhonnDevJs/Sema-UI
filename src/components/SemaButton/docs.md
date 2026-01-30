@@ -11,7 +11,7 @@ Asegúrate de importar el componente en tu proyecto. Aquí tienes ejemplos para 
 Importa la librería en tu archivo principal (`main.jsx`, `App.jsx`) o en el `layout.tsx`.
 
 ```jsx
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 
 export default function App() {
 	return (
@@ -43,14 +43,14 @@ plugins: [
 Uso en componente:
 
 ```javascript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ### Angular Agrega CUSTOM_ELEMENTS_SCHEMA en tu módulo para permitir el uso de Web Components.
 
 ```typescript
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 
 @NgModule({
 	schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -61,7 +61,7 @@ export class AppModule {}
 ### Astro
 
 ```typescript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ```html
@@ -71,7 +71,7 @@ import "@jegdev/sema-ui";
 ### Svelte
 
 ```typescript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ## Ejemplos de Uso
@@ -89,12 +89,8 @@ Por defecto, el componente renderiza un botón con los estilos primarios de la m
 Para que el botón funcione como un hipervínculo (`<a>`), define la propiedad `kind="link"` y proporciona una `url`.
 
 ```html
-<sema-button
-	kind="link"
-	url="https://google.com"
-	target="_blank"
->
-Ir a Google
+<sema-button kind="link" url="https://google.com" target="_blank">
+	Ir a Google
 </sema-button>
 ```
 
@@ -135,12 +131,8 @@ Para aplicar tus propios colores, añade el atributo `custom` (booleano) y defin
 > **Nota:** Al hacer hover, los colores se invierten automáticamente para crear un efecto visual.
 
 ```html
-<sema-button
-	custom
-	firstColor="#000000"
-	secondaryColor="#FACC15"
->
-Negro y Amarillo
+<sema-button custom firstColor="#000000" secondaryColor="#FACC15">
+	Negro y Amarillo
 </sema-button>
 ```
 
@@ -148,18 +140,18 @@ Negro y Amarillo
 
 ## API Reference
 
-| Propiedad        | Tipo      | Default     | Descripción                                                             |
-| :--------------- | :-------- | :---------- | :---------------------------------------------------------------------- |
-| `mode`           | `String`  | `primary`   | Puedes alternar entre `outline` y `ghost`               								 |
-| `kind`           | `String`  | `""`        | Si es `"link"`, renderiza un `<a>`. De lo contrario, un `<button>`.     |
-| `url`            | `String`  | `undefined` | URL de destino. Solo funciona si `kind="link"`.                         |
-| `target`         | `String`  | `_self`     | Define dónde abrir el enlace (ej. `_blank`). Solo si `kind="link"`.     |
-| `altText`        | `String`  | `""`        | Define los texts de los atributos `alt` y `title` de un enlace o botón. |
-| `size`           | `String`  | `"md"`      | Ancho del botón: `sm`, `md`, `lg`, `full`.                              |
-| `fontSize`       | `String`  | `"md"`      | Tamaño del texto: `sm`, `md`, `lg`, `xl`.                               |
-| `custom`         | `String`  | `off`       | Activa el modo de colores personalizados con `on`.                      |
-| `firstColor`     | `String`  | `""`        | Color de fondo (Background) en modo personalizado.                      |
-| `secondaryColor` | `String`  | `""`        | Color de texto en modo personalizado.                                   |
+| Propiedad        | Tipo     | Default     | Descripción                                                             |
+| :--------------- | :------- | :---------- | :---------------------------------------------------------------------- |
+| `mode`           | `String` | `primary`   | Puedes alternar entre `outline` y `ghost`                               |
+| `kind`           | `String` | `""`        | Si es `"link"`, renderiza un `<a>`. De lo contrario, un `<button>`.     |
+| `url`            | `String` | `undefined` | URL de destino. Solo funciona si `kind="link"`.                         |
+| `target`         | `String` | `_self`     | Define dónde abrir el enlace (ej. `_blank`). Solo si `kind="link"`.     |
+| `altText`        | `String` | `""`        | Define los texts de los atributos `alt` y `title` de un enlace o botón. |
+| `size`           | `String` | `"md"`      | Ancho del botón: `sm`, `md`, `lg`, `full`.                              |
+| `fontSize`       | `String` | `"md"`      | Tamaño del texto: `sm`, `md`, `lg`, `xl`.                               |
+| `custom`         | `String` | `off`       | Activa el modo de colores personalizados con `on`.                      |
+| `firstColor`     | `String` | `""`        | Color de fondo (Background) en modo personalizado.                      |
+| `secondaryColor` | `String` | `""`        | Color de texto en modo personalizado.                                   |
 
 ## Accesibilidad
 

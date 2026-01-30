@@ -4,7 +4,7 @@ export const themeStyles = css`
 	:host {
 		--color-primary-surface: #fef2f2;
 		--color-primary-light: #fecaca;
-		--color-primary: #dc2626;
+		--color-primary: #da2b48;
 		--color-primary-hover: #ef4444;
 		--color-primary-active: #991b1b;
 		--color-secondary-surface: #f3f4f6;

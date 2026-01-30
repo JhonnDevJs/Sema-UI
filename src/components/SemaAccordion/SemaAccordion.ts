@@ -16,7 +16,7 @@ export class SemaAccordion extends LitElement {
     const isOpen = this.open === true;
 
     // Definir colores base
-    let svgColor =  this.color ? this.color : '#dc2626';
+    let svgColor =  this.color ? this.color : '#da2b48';
     let btnColor = isOpen ? 'rgba(229, 231, 235, 0.2)' : '';
 
     const stylesBtn = isOpen ? `

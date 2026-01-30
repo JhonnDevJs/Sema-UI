@@ -11,7 +11,7 @@ Asegúrate de importar el componente en tu proyecto. Aquí tienes ejemplos para 
 Importa la librería en tu archivo principal (`main.jsx`, `App.jsx`) o en el `layout.tsx`.
 
 ```jsx
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 
 export default function App() {
 	return (
@@ -46,14 +46,14 @@ plugins: [
 Uso en componente:
 
 ```javascript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ### Angular Agrega CUSTOM_ELEMENTS_SCHEMA en tu módulo para permitir el uso de Web Components.
 
 ```typescript
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 
 @NgModule({
 	schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -64,7 +64,7 @@ export class AppModule {}
 ### Astro
 
 ```typescript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ```html
@@ -75,7 +75,7 @@ import "@jegdev/sema-ui";
 ### Svelte
 
 ```typescript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ## Ejemplos de Uso

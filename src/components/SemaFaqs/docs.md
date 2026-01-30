@@ -13,7 +13,7 @@ Importa la librería en tu archivo principal (`main.jsx`, `App.jsx`) o en el `la
 - Primer ejemplo pasando manualmente los valores para las propiedades:
 
 ```jsx
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 
 export default function App() {
 	return (
@@ -31,7 +31,7 @@ export default function App() {
 - Segundo ejemplo pasando los elementos de las preguntas mediante un array:
 
 ```jsx
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 
 // Asignas el array de objetos
 const myFaqs = [
@@ -75,14 +75,14 @@ plugins: [
 Uso en componente:
 
 ```javascript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ### Angular Agrega CUSTOM_ELEMENTS_SCHEMA en tu módulo para permitir el uso de Web Components.
 
 ```typescript
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 
 @NgModule({
 	schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -93,7 +93,7 @@ export class AppModule {}
 ### Astro
 
 ```typescript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ```html
@@ -109,7 +109,7 @@ import "@jegdev/sema-ui";
 ### Svelte
 
 ```typescript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ## Ejemplos de Uso
@@ -136,7 +136,7 @@ Para que el componente de acordion cambie su color predeterminado define la prop
 <sema-faqs color="blue" title="Soporte Técnico" faqs="[...]"></sema-faqs>
 ```
 
-La propiedad `color=""` puede recibir distintos formatos para colocar los colores, puedes usar los predetermiados como lo harias comunmente en css usando para palabras reservada "red", "blue", "green", etc. O puedes hacer uso de colores exadecimales como "#dc2626". "#fcfcfc", "#0c0c0c", etc. Tambien puedes hacer uso de rgb() de la misma forma.
+La propiedad `color=""` puede recibir distintos formatos para colocar los colores, puedes usar los predetermiados como lo harias comunmente en css usando para palabras reservada "red", "blue", "green", etc. O puedes hacer uso de colores exadecimales como "#da2b48". "#fcfcfc", "#0c0c0c", etc. Tambien puedes hacer uso de rgb() de la misma forma.
 
 #### Ejemplos:
 
@@ -168,7 +168,7 @@ La propiedad `color=""` puede recibir distintos formatos para colocar los colore
 
 | Propiedad | Tipo     | Default   | Descripción                                       |
 | :-------- | :------- | :-------- | :------------------------------------------------ |
-| `color`   | `String` | `#dc2626` | Puedes usar `blue`, `#0077ff` y `rgb(0, 85, 255)` |
+| `color`   | `String` | `#da2b48` | Puedes usar `blue`, `#0077ff` y `rgb(0, 85, 255)` |
 | `title`   | `String` | `""`      | Título principal de la sección (H2).              |
 | `faqs`    | `Array`  | `[]`      | Array de objetos con la estructura                |
 |           |          |           | { question: string, answer: string }              |

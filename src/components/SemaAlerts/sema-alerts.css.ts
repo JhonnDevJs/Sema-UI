@@ -31,14 +31,14 @@ export const SemaAlertsStyles = css`
 	}
 
 	.__error {
-		border: 1px solid #dc2626;
+		border: 1px solid #da2b48;
 		border-left-width: 4px;
 		background: #450a0a;
 		-webkit-backdrop-filter: blur(4px);
 		backdrop-filter: blur(4px);
 
 		.__title {
-			color: #dc2626;
+			color: #da2b48;
 		}
 		.__paragraph {
 			color: #fff;

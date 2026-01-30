@@ -13,7 +13,7 @@ Importa la librería en tu archivo principal (`main.jsx`, `App.jsx`) o en el `la
 - Primer ejemplo pasando manualmente los valores para las propiedades:
 
 ```jsx
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 
 export default function App() {
 	return (
@@ -31,13 +31,13 @@ export default function App() {
 - Segundo ejemplo pasando los elementos de las preguntas mediante un array:
 
 ```jsx
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 
 // Asignas el array de objetos
 const myBreads = [
-  { label: "Inicio", path: "/" },
-  { label: "Componentes", path: "/components" },
-  { label: "Configuración" }
+	{ label: "Inicio", path: "/" },
+	{ label: "Componentes", path: "/components" },
+	{ label: "Configuración" },
 ];
 
 export default function App() {
@@ -71,14 +71,14 @@ plugins: [
 Uso en componente:
 
 ```javascript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ### Angular Agrega CUSTOM_ELEMENTS_SCHEMA en tu módulo para permitir el uso de Web Components.
 
 ```typescript
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 
 @NgModule({
 	schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -89,23 +89,23 @@ export class AppModule {}
 ### Astro
 
 ```typescript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ```html
-  <sema-breadcrumbs
-    items='[
+<sema-breadcrumbs
+	items='[
       { "label": "Inicio", "path": "/" },
       { "label": "Componentes", "path": "/components" },
       { "label": "Configuración" }
     ]'
-  ></sema-breadcrumbs>
+></sema-breadcrumbs>
 ```
 
 ### Svelte
 
 ```typescript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ## Ejemplos de Uso
@@ -115,17 +115,17 @@ import "@jegdev/sema-ui";
 Para que el componente de acordion cambie su color predeterminado define la propiedad color="". Puedes definir un color principal que se heredará en todos los acordiones internos.
 
 ```html
-  <sema-breadcrumbs
-    color="blue"
-    items='[
+<sema-breadcrumbs
+	color="blue"
+	items='[
       { "label": "Inicio", "path": "/" },
       { "label": "Componentes", "path": "/components" },
       { "label": "Configuración" }
     ]'
-  ></sema-breadcrumbs>
+></sema-breadcrumbs>
 ```
 
-La propiedad `color=""` puede recibir distintos formatos para colocar los colores, puedes usar los predetermiados como lo harias comunmente en css usando para palabras reservada "red", "blue", "green", etc. O puedes hacer uso de colores exadecimales como "#dc2626". "#fcfcfc", "#0c0c0c", etc. Tambien puedes hacer uso de rgb() de la misma forma.
+La propiedad `color=""` puede recibir distintos formatos para colocar los colores, puedes usar los predetermiados como lo harias comunmente en css usando para palabras reservada "red", "blue", "green", etc. O puedes hacer uso de colores exadecimales como "#da2b48". "#fcfcfc", "#0c0c0c", etc. Tambien puedes hacer uso de rgb() de la misma forma.
 
 #### Ejemplos:
 
@@ -134,7 +134,7 @@ La propiedad `color=""` puede recibir distintos formatos para colocar los colore
 ```html
 <sema-breadcrumbs
 	color="blue"
-  items='[
+	items='[
     { "label": "Inicio", "path": "/" },
     { "label": "Componentes", "path": "/components" },
     { "label": "Configuración" }
@@ -147,7 +147,7 @@ La propiedad `color=""` puede recibir distintos formatos para colocar los colore
 ```html
 <sema-breadcrumbs
 	color="#0077ff"
-  items='[
+	items='[
     { "label": "Inicio", "path": "/" },
     { "label": "Componentes", "path": "/components" },
     { "label": "Configuración" }
@@ -160,7 +160,7 @@ La propiedad `color=""` puede recibir distintos formatos para colocar los colore
 ```html
 <sema-breadcrumbs
 	color="rgb(0, 85, 255)"
-  items='[
+	items='[
     { "label": "Inicio", "path": "/" },
     { "label": "Componentes", "path": "/components" },
     { "label": "Configuración" }
@@ -172,8 +172,8 @@ La propiedad `color=""` puede recibir distintos formatos para colocar los colore
 
 ## API Reference
 
-| Propiedad | Tipo     | Default   | Descripción                                         |
-| :-------- | :------- | :-------- | :-------------------------------------------------  |
-| `color`   | `String` | `#dc2626` | Puedes usar `blue`, `#0077ff` y `rgb(0, 85, 255)` |
-| `items`   | `Array`  | `[]`      | Array de objetos con la estructura                  |
-|           |          |           | { label: string, path: string }                     |
+| Propiedad | Tipo     | Default   | Descripción                                       |
+| :-------- | :------- | :-------- | :------------------------------------------------ |
+| `color`   | `String` | `#da2b48` | Puedes usar `blue`, `#0077ff` y `rgb(0, 85, 255)` |
+| `items`   | `Array`  | `[]`      | Array de objetos con la estructura                |
+|           |          |           | { label: string, path: string }                   |

@@ -11,7 +11,7 @@ Asegúrate de importar el componente en tu proyecto. Aquí tienes ejemplos para 
 Importa la librería en tu archivo principal (`main.jsx`, `App.jsx`) o en el `layout.tsx`.
 
 ```jsx
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 
 export default function App() {
 	return (
@@ -43,14 +43,14 @@ plugins: [
 Uso en componente:
 
 ```javascript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ### Angular Agrega CUSTOM_ELEMENTS_SCHEMA en tu módulo para permitir el uso de Web Components.
 
 ```typescript
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 
 @NgModule({
 	schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -61,7 +61,7 @@ export class AppModule {}
 ### Astro
 
 ```typescript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ```html
@@ -74,7 +74,7 @@ import "@jegdev/sema-ui";
 ### Svelte
 
 ```typescript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ## Ejemplos de Uso
@@ -102,7 +102,7 @@ Para que el componente de acordion cambie su color predeterminado define la prop
 ></sema-accordion>
 ```
 
-La propiedad `color=""` puede recibir distintos formatos para colocar los colores, puedes usar los predetermiados como lo harias comunmente en css usando para palabras reservada "red", "blue", "green", etc. O puedes hacer uso de colores exadecimales como "#dc2626". "#fcfcfc", "#0c0c0c", etc. Tambien puedes hacer uso de rgb() de la misma forma.
+La propiedad `color=""` puede recibir distintos formatos para colocar los colores, puedes usar los predetermiados como lo harias comunmente en css usando para palabras reservada "red", "blue", "green", etc. O puedes hacer uso de colores exadecimales como "#da2b48". "#fcfcfc", "#0c0c0c", etc. Tambien puedes hacer uso de rgb() de la misma forma.
 
 #### Ejemplos:
 
@@ -140,8 +140,8 @@ La propiedad `color=""` puede recibir distintos formatos para colocar los colore
 
 ## API Reference
 
-| Propiedad  | Tipo     | Default   | Descripción                                         |
-| :--------- | :------- | :-------- | :------------------------------------------------   |
-| `color`    | `String` | `#dc2626` | Puedes usar `blue`, `#0077ff` y `rgb(0, 85, 255)` |
-| `question` | `String` | `""`      | Puedes pasarle aqui el titulo de la pregunta.       |
-| `answer`   | `String` | `""`      | Pueder pasarle aqui la respuesta de la pregunta.    |
+| Propiedad  | Tipo     | Default   | Descripción                                       |
+| :--------- | :------- | :-------- | :------------------------------------------------ |
+| `color`    | `String` | `#da2b48` | Puedes usar `blue`, `#0077ff` y `rgb(0, 85, 255)` |
+| `question` | `String` | `""`      | Puedes pasarle aqui el titulo de la pregunta.     |
+| `answer`   | `String` | `""`      | Pueder pasarle aqui la respuesta de la pregunta.  |

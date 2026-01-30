@@ -26,8 +26,8 @@ export class SemaDropdown extends LitElement {
   render() {
     const isOpen = this.open === true;
 
-    let svgColor =  this.color ? this.color : '#dc2626';
-    let bgColor =  this.bgColor ? this.bgColor : '#dc2626';
+    let svgColor =  this.color ? this.color : '#da2b48';
+    let bgColor =  this.bgColor ? this.bgColor : '#da2b48';
 
     const stylesBtn = isOpen ? `
       --isOpenBgColor: ${bgColor};

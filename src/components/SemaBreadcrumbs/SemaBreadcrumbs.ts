@@ -11,7 +11,7 @@ export class SemaBreadcrumbs extends LitElement {
   @property({ type: String }) color: string = '';
 
   render() {
-    const styles = this.color ? `--color-primary: ${this.color};` : `--color-primary: #dc2626;`;
+    const styles = this.color ? `--color-primary: ${this.color};` : `--color-primary: #da2b48;`;
 
     return html`
       <nav aria-label="breadcrumb" style="${styles}">

@@ -11,7 +11,7 @@ Asegúrate de importar el componente en tu proyecto. Aquí tienes ejemplos para 
 Importa la librería en tu archivo principal (`main.jsx`, `App.jsx`) o en el `layout.tsx`.
 
 ```jsx
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 
 export default function App() {
 	return (
@@ -52,7 +52,7 @@ Uso en componente:
 
 ```html
 <script setup>
-	import "@jegdev/sema-ui";
+	import "@jegdev/semaui";
 </script>
 
 <template>
@@ -72,7 +72,7 @@ Uso en componente:
 
 ```typescript
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from "@angular/core";
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 
 @NgModule({
 	schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -83,25 +83,25 @@ export class AppModule {}
 ### Astro
 
 ```typescript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ```html
-	<sema-card-product
-		id="123"
-		title="Auriculares Premium"
-		category="Audio"
-		image="https://ejemplo.com/imagen.jpg"
-		:rate="4.5"
-		:count="120"
-		:price="299.99"
-	></sema-card-product>
+<sema-card-product
+	id="123"
+	title="Auriculares Premium"
+	category="Audio"
+	image="https://ejemplo.com/imagen.jpg"
+	:rate="4.5"
+	:count="120"
+	:price="299.99"
+></sema-card-product>
 ```
 
 ### Svelte
 
 ```typescript
-import "@jegdev/sema-ui";
+import "@jegdev/semaui";
 ```
 
 ## Ejemplos de Uso
@@ -111,27 +111,27 @@ import "@jegdev/sema-ui";
 Por defecto, el componente renderiza una card que recibe atributos id (string), title (string), category (string), image (string), :rate (number), :count (number), :price (number).
 
 ```html
-	<sema-card-product
-		id="123"
-		title="Auriculares Premium"
-		category="Audio"
-		image="https://ejemplo.com/imagen.jpg"
-		:rate="4.5"
-		:count="120"
-		:price="299.99"
-	></sema-card-product>
+<sema-card-product
+	id="123"
+	title="Auriculares Premium"
+	category="Audio"
+	image="https://ejemplo.com/imagen.jpg"
+	:rate="4.5"
+	:count="120"
+	:price="299.99"
+></sema-card-product>
 ```
 
 ---
 
 ## API Reference
 
-| Propiedad  | Tipo     | Default   | Descripción                                                               |
-| :--------- | :------- | :-------- | :------------------------------------------------------------------------ |
-| `id`       | `String` | ""        | Identificador único del producto. Se muestra opcionalmente en la tarjeta. |
-| `title`    | `String` | ""        | Nombre o título del producto.                                             |
-| `category` | `String` | ""        | Categoría a la que pertenece el producto.                                 |
-| `image`    | `String` | ""        | URL de la imagen del producto.                                            |
-| `rate`     | `Number` | 0         | Calificación del producto (0 a 5). Se visualiza como estrellas.           |
-| `count`    | `Number` | 0         | Número de valoraciones o reseñas que ha recibido el producto.             |
-| `price`    | `Number` | 0         | Precio del producto.                                                      |
+| Propiedad  | Tipo     | Default | Descripción                                                               |
+| :--------- | :------- | :------ | :------------------------------------------------------------------------ |
+| `id`       | `String` | ""      | Identificador único del producto. Se muestra opcionalmente en la tarjeta. |
+| `title`    | `String` | ""      | Nombre o título del producto.                                             |
+| `category` | `String` | ""      | Categoría a la que pertenece el producto.                                 |
+| `image`    | `String` | ""      | URL de la imagen del producto.                                            |
+| `rate`     | `Number` | 0       | Calificación del producto (0 a 5). Se visualiza como estrellas.           |
+| `count`    | `Number` | 0       | Número de valoraciones o reseñas que ha recibido el producto.             |
+| `price`    | `Number` | 0       | Precio del producto.                                                      |
