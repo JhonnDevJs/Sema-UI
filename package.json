@@ -37,7 +37,7 @@
   },
   "exports": {
     ".": {
-      "types": "./src/index.d.ts",
+      "types": "./dist/index.d.ts",
       "import": "./dist/semaui.es.js",
       "require": "./dist/semaui.umd.js"
     }
