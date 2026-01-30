@@ -12,6 +12,7 @@ export const BreadcrumbsStyles = css`
     padding: 0;
     margin: 0;
     font-size: 0.9rem;
+		box-sizing: border-box;
   }
 
   .__link a {

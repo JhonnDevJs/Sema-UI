@@ -2,16 +2,21 @@ import { css } from "lit"
 
 export const stylesSemaFaqs = css`
 
+  :root {
+    display: block;
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+  }
+
+  section {
+		box-sizing: border-box;
+  }
+  
   .__title {
     color: #000;
     text-align: center;
   }
 
   @media (prefers-color-scheme: dark) {
-    :root {
-      display: block;
-      font-family: "Inter", system-ui, -apple-system, sans-serif;
-    }
 
     section {
       display: flex;

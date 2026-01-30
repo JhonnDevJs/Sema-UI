@@ -19,6 +19,7 @@ export const SemaDropdownStyles = css`
     border-radius: 4px;
     padding: 1rem;
     gap: 1rem;
+		box-sizing: border-box;
   }
 
   .__label {

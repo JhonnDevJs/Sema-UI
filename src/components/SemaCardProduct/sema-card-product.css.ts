@@ -11,6 +11,7 @@ export const cardStyles = css`
 			transform 0.3s ease,
 			box-shadow 0.3s ease;
 		cursor: pointer;
+		box-sizing: border-box;
 	}
 
 	/* Efecto al pasar el mouse por encima */
