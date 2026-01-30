@@ -2,34 +2,31 @@ import { css } from "lit"
 
 export const stylesSemaFaqs = css`
 
-  :root {
+  :host {
     display: block;
     font-family: "Inter", system-ui, -apple-system, sans-serif;
   }
 
   section {
-		box-sizing: border-box;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
   
+  article {
+    max-width: 980px;
+    width: 100%;
+  }
+
   .__title {
     color: #000;
     text-align: center;
   }
 
   @media (prefers-color-scheme: dark) {
-
-    section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-    }
-
-    article {
-      max-width: 980px;
-      width: 100%;
-    }
     .__title{ 
       color: #fff;
     }
