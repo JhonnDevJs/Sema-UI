@@ -7,7 +7,7 @@ export const stylesSemaFaqs = css`
     font-family: "Inter", system-ui, -apple-system, sans-serif;
   }
 
-  section {
+  .faqs-section {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
